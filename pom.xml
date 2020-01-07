@@ -59,7 +59,6 @@
             <version>1.4.200</version>
         </dependency>
 
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -79,6 +78,18 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
+
+            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>6.1.4</version>
+                <configuration>
+                    <url>jdbc:h2:C:\\Users\\12236\\Desktop\\learn\\community\\h2\\community</url>
+                    <user>sa</user>
+                    <password>123456</password>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 
